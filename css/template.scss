@@ -1,0 +1,85 @@
+@import "reset.scss";
+@import "css3-mixins.scss";
+@import "colors.scss";
+
+html,body{height: 100%;}
+
+body{
+	background:#fefefe;
+	background:url('../images/bgWAD2015.jpg') 50% 0;
+	background-attachment : fixed;
+}
+
+svg{display:block;}
+
+.container-fluid {
+    padding: 0px;
+//   .col-lg-12{padding-top: 500px;}
+}
+
+.bgPink{
+	background: rgba($pink, 1);
+}
+.bgDarkGrey{
+	background: rgba($darkgrey, 1);
+}
+.bgMediumGrey{
+	background: rgba($mediumgrey, 1);
+}
+.bgLightGrey{
+	background: rgba($lightgrey, 1);
+}
+.bgWhite{
+	background: rgba(#fff, 1);
+}
+
+.introducing{
+	height: 100% !important;
+//	overflow: hidden;
+}
+
+.wad2015{
+	height: 800px;
+}
+
+.registration{
+}
+
+.last-medical{
+}
+
+.partners{
+}
+
+.footer{
+}
+
+.svg-pink{
+	fill: $pink;
+}
+.svg-darkgrey{
+	fill: $darkgrey;
+}
+.svg-mediumgrey{
+	fill: $mediumgrey;
+}
+.svg-white{
+	fill: #fff;
+}
+.svg-reverse{
+	@include transform-style;
+	@include transform(rotateY(180deg));
+}
+
+.pos-bot{
+	width:100%;
+	position:absolute;
+	bottom:0;
+}
+
+.arrowSlide{
+	position: relative;
+	margin:20px auto;
+	width: 60px;
+	text-align: center;
+}
