@@ -2,43 +2,41 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-/* line 6, /Volumes/HDD 01/Documents/JK Prod/Client/Dpartners/WAD/web/official/css/reset.scss */
+/* line 6, /Volumes/HD/Documents/JK/git/wad2015/css/reset.scss */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
-  font: inherit;
   vertical-align: baseline; }
 
 /* HTML5 display-role reset for older browsers */
-/* line 16, /Volumes/HDD 01/Documents/JK Prod/Client/Dpartners/WAD/web/official/css/reset.scss */
+/* line 14, /Volumes/HD/Documents/JK/git/wad2015/css/reset.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
   display: block; }
 
-/* line 19, /Volumes/HDD 01/Documents/JK Prod/Client/Dpartners/WAD/web/official/css/reset.scss */
+/* line 17, /Volumes/HD/Documents/JK/git/wad2015/css/reset.scss */
 body {
   line-height: 1; }
 
-/* line 22, /Volumes/HDD 01/Documents/JK Prod/Client/Dpartners/WAD/web/official/css/reset.scss */
+/* line 20, /Volumes/HD/Documents/JK/git/wad2015/css/reset.scss */
 ol, ul {
   list-style: none; }
 
-/* line 25, /Volumes/HDD 01/Documents/JK Prod/Client/Dpartners/WAD/web/official/css/reset.scss */
+/* line 23, /Volumes/HD/Documents/JK/git/wad2015/css/reset.scss */
 blockquote, q {
   quotes: none; }
 
-/* line 29, /Volumes/HDD 01/Documents/JK Prod/Client/Dpartners/WAD/web/official/css/reset.scss */
+/* line 27, /Volumes/HD/Documents/JK/git/wad2015/css/reset.scss */
 blockquote:before, blockquote:after {
   content: '';
   content: none; }
 
-/* line 34, /Volumes/HDD 01/Documents/JK Prod/Client/Dpartners/WAD/web/official/css/reset.scss */
+/* line 32, /Volumes/HD/Documents/JK/git/wad2015/css/reset.scss */
 q:before, q:after {
   content: '';
   content: none; }
 
-/* line 38, /Volumes/HDD 01/Documents/JK Prod/Client/Dpartners/WAD/web/official/css/reset.scss */
+/* line 36, /Volumes/HD/Documents/JK/git/wad2015/css/reset.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0; }
@@ -116,69 +114,83 @@ table {
 /* TRIPLE BORDERS */
 /* KEYFRAMES */
 /* ANIMATION */
-/* line 5, /Volumes/HDD 01/Documents/JK Prod/Client/Dpartners/WAD/web/official/css/template.scss */
+/* line 5, /Volumes/HD/Documents/JK/git/wad2015/css/template.scss */
 html, body {
   height: 100%; }
 
-/* line 7, /Volumes/HDD 01/Documents/JK Prod/Client/Dpartners/WAD/web/official/css/template.scss */
+/* line 7, /Volumes/HD/Documents/JK/git/wad2015/css/template.scss */
 body {
   background: #fefefe;
   background: url('../images/bgWAD2015.jpg') 50% 0;
   background-attachment: fixed; }
 
-/* line 13, /Volumes/HDD 01/Documents/JK Prod/Client/Dpartners/WAD/web/official/css/template.scss */
+/* line 13, /Volumes/HD/Documents/JK/git/wad2015/css/template.scss */
 svg {
   display: block; }
 
-/* line 15, /Volumes/HDD 01/Documents/JK Prod/Client/Dpartners/WAD/web/official/css/template.scss */
+/* line 15, /Volumes/HD/Documents/JK/git/wad2015/css/template.scss */
 .container-fluid {
   padding: 0px; }
 
-/* line 20, /Volumes/HDD 01/Documents/JK Prod/Client/Dpartners/WAD/web/official/css/template.scss */
+/* line 20, /Volumes/HD/Documents/JK/git/wad2015/css/template.scss */
 .bgPink {
   background: #d20057; }
 
-/* line 23, /Volumes/HDD 01/Documents/JK Prod/Client/Dpartners/WAD/web/official/css/template.scss */
+/* line 23, /Volumes/HD/Documents/JK/git/wad2015/css/template.scss */
 .bgDarkGrey {
   background: #1d1d1b; }
 
-/* line 26, /Volumes/HDD 01/Documents/JK Prod/Client/Dpartners/WAD/web/official/css/template.scss */
+/* line 26, /Volumes/HD/Documents/JK/git/wad2015/css/template.scss */
 .bgMediumGrey {
   background: #2a2a28; }
 
-/* line 29, /Volumes/HDD 01/Documents/JK Prod/Client/Dpartners/WAD/web/official/css/template.scss */
+/* line 29, /Volumes/HD/Documents/JK/git/wad2015/css/template.scss */
 .bgLightGrey {
   background: #f6f6f6; }
 
-/* line 32, /Volumes/HDD 01/Documents/JK Prod/Client/Dpartners/WAD/web/official/css/template.scss */
+/* line 32, /Volumes/HD/Documents/JK/git/wad2015/css/template.scss */
 .bgWhite {
   background: white; }
 
-/* line 36, /Volumes/HDD 01/Documents/JK Prod/Client/Dpartners/WAD/web/official/css/template.scss */
+/* line 36, /Volumes/HD/Documents/JK/git/wad2015/css/template.scss */
 .introducing {
   height: 100% !important; }
 
-/* line 41, /Volumes/HDD 01/Documents/JK Prod/Client/Dpartners/WAD/web/official/css/template.scss */
+/* line 41, /Volumes/HD/Documents/JK/git/wad2015/css/template.scss */
 .wad2015 {
-  height: 800px; }
+  padding: 100px 0;
+  color: white;
+  line-height: 40px; }
+  /* line 45, /Volumes/HD/Documents/JK/git/wad2015/css/template.scss */
+  .wad2015 .logoWAD {
+    vertical-align: middle; }
+  /* line 49, /Volumes/HD/Documents/JK/git/wad2015/css/template.scss */
+  .wad2015 h2 {
+    text-align: right;
+    margin-bottom: 20px;
+    text-transform: uppercase; }
 
-/* line 57, /Volumes/HDD 01/Documents/JK Prod/Client/Dpartners/WAD/web/official/css/template.scss */
+/* line 64, /Volumes/HD/Documents/JK/git/wad2015/css/template.scss */
+.borderDashed {
+  border-left: 1px dashed #ffffff; }
+
+/* line 78, /Volumes/HD/Documents/JK/git/wad2015/css/template.scss */
 .svg-pink {
   fill: #d20057; }
 
-/* line 60, /Volumes/HDD 01/Documents/JK Prod/Client/Dpartners/WAD/web/official/css/template.scss */
+/* line 81, /Volumes/HD/Documents/JK/git/wad2015/css/template.scss */
 .svg-darkgrey {
   fill: #1d1d1b; }
 
-/* line 63, /Volumes/HDD 01/Documents/JK Prod/Client/Dpartners/WAD/web/official/css/template.scss */
+/* line 84, /Volumes/HD/Documents/JK/git/wad2015/css/template.scss */
 .svg-mediumgrey {
   fill: #2a2a28; }
 
-/* line 66, /Volumes/HDD 01/Documents/JK Prod/Client/Dpartners/WAD/web/official/css/template.scss */
+/* line 87, /Volumes/HD/Documents/JK/git/wad2015/css/template.scss */
 .svg-white {
   fill: #fff; }
 
-/* line 69, /Volumes/HDD 01/Documents/JK Prod/Client/Dpartners/WAD/web/official/css/template.scss */
+/* line 90, /Volumes/HD/Documents/JK/git/wad2015/css/template.scss */
 .svg-reverse {
   -webkit-transform-style: preserve-3d;
   -khtml-transform-style: preserve-3d;
@@ -193,17 +205,22 @@ svg {
   -o-transform: rotateY(180deg);
   transform: rotateY(180deg); }
 
-/* line 74, /Volumes/HDD 01/Documents/JK Prod/Client/Dpartners/WAD/web/official/css/template.scss */
+/* line 95, /Volumes/HD/Documents/JK/git/wad2015/css/template.scss */
 .pos-bot {
   width: 100%;
   position: absolute;
   bottom: 0; }
 
-/* line 80, /Volumes/HDD 01/Documents/JK Prod/Client/Dpartners/WAD/web/official/css/template.scss */
+/* line 101, /Volumes/HD/Documents/JK/git/wad2015/css/template.scss */
 .arrowSlide {
   position: relative;
-  margin: 20px auto;
+  margin: 40px auto;
   width: 60px;
   text-align: center; }
+
+/* line 108, /Volumes/HD/Documents/JK/git/wad2015/css/template.scss */
+.svgSplit {
+  padding: 0;
+  mading: 0; }
 
 /*# sourceMappingURL=template.css.map */

@@ -5,42 +5,63 @@
 html,body{height: 100%;}
 
 body{
-	background:#fefefe;
-	background:url('../images/bgWAD2015.jpg') 50% 0;
-	background-attachment : fixed;
+    background:#fefefe;
+    background:url('../images/bgWAD2015.jpg') 50% 0;
+    background-attachment : fixed;
 }
 
 svg{display:block;}
 
 .container-fluid {
     padding: 0px;
-//   .col-lg-12{padding-top: 500px;}
+    //   .col-lg-12{padding-top: 500px;}
 }
 
 .bgPink{
-	background: rgba($pink, 1);
+    background: rgba($pink, 1);
 }
 .bgDarkGrey{
-	background: rgba($darkgrey, 1);
+    background: rgba($darkgrey, 1);
 }
 .bgMediumGrey{
-	background: rgba($mediumgrey, 1);
+    background: rgba($mediumgrey, 1);
 }
 .bgLightGrey{
-	background: rgba($lightgrey, 1);
+    background: rgba($lightgrey, 1);
 }
 .bgWhite{
-	background: rgba(#fff, 1);
+    background: rgba(#fff, 1);
 }
 
 .introducing{
-	height: 100% !important;
-//	overflow: hidden;
+    height: 100% !important;
+    //	overflow: hidden;
 }
 
 .wad2015{
-	height: 800px;
+    padding:100px 0;
+    color:white;
+    line-height:40px;
+    & .logoWAD{
+//        line-height:380px;
+        vertical-align:middle;
+    }
+    & h2{
+        text-align: right;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+    }
+//    & container{
+//        display:table;
+//    }
+//    & [class*="col-"] {
+//        float:none;
+//        display:table-cell;
+//        vertical-align:top;
+//    }
 }
+
+.borderDashed{border-left:1px dashed #ffffff;}
 
 .registration{
 }
@@ -55,31 +76,36 @@ svg{display:block;}
 }
 
 .svg-pink{
-	fill: $pink;
+    fill: $pink;
 }
 .svg-darkgrey{
-	fill: $darkgrey;
+    fill: $darkgrey;
 }
 .svg-mediumgrey{
-	fill: $mediumgrey;
+    fill: $mediumgrey;
 }
 .svg-white{
-	fill: #fff;
+    fill: #fff;
 }
 .svg-reverse{
-	@include transform-style;
-	@include transform(rotateY(180deg));
+    @include transform-style;
+    @include transform(rotateY(180deg));
 }
 
 .pos-bot{
-	width:100%;
-	position:absolute;
-	bottom:0;
+    width:100%;
+    position:absolute;
+    bottom:0;
 }
 
 .arrowSlide{
-	position: relative;
-	margin:20px auto;
-	width: 60px;
-	text-align: center;
+    position: relative;
+    margin:40px auto;
+    width: 60px;
+    text-align: center;
+}
+
+.svgSplit{
+    padding:0;
+    mading:0;
 }
