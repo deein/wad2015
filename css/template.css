@@ -121,76 +121,117 @@ html, body {
 /* line 7, /Volumes/HD/Documents/JK/git/wad2015/css/template.scss */
 body {
   background: #fefefe;
-  background: url('../images/bgWAD2015.jpg') 50% 0;
-  background-attachment: fixed; }
+  background: url('../images/bgWAD2015.jpg') center 0;
+  background-attachment: fixed;
+  background-size: cover; }
 
-/* line 13, /Volumes/HD/Documents/JK/git/wad2015/css/template.scss */
+/* line 18, /Volumes/HD/Documents/JK/git/wad2015/css/template.scss */
+.vignette {
+  margin-bottom: 30px;
+  background: red; }
+
+/* line 23, /Volumes/HD/Documents/JK/git/wad2015/css/template.scss */
 svg {
   display: block; }
 
-/* line 15, /Volumes/HD/Documents/JK/git/wad2015/css/template.scss */
+/* line 25, /Volumes/HD/Documents/JK/git/wad2015/css/template.scss */
 .container-fluid {
   padding: 0px; }
 
-/* line 20, /Volumes/HD/Documents/JK/git/wad2015/css/template.scss */
+/* line 30, /Volumes/HD/Documents/JK/git/wad2015/css/template.scss */
 .bgPink {
   background: #d20057; }
 
-/* line 23, /Volumes/HD/Documents/JK/git/wad2015/css/template.scss */
+/* line 33, /Volumes/HD/Documents/JK/git/wad2015/css/template.scss */
 .bgDarkGrey {
   background: #1d1d1b; }
 
-/* line 26, /Volumes/HD/Documents/JK/git/wad2015/css/template.scss */
+/* line 36, /Volumes/HD/Documents/JK/git/wad2015/css/template.scss */
 .bgMediumGrey {
   background: #2a2a28; }
 
-/* line 29, /Volumes/HD/Documents/JK/git/wad2015/css/template.scss */
+/* line 39, /Volumes/HD/Documents/JK/git/wad2015/css/template.scss */
 .bgLightGrey {
   background: #f6f6f6; }
 
-/* line 32, /Volumes/HD/Documents/JK/git/wad2015/css/template.scss */
+/* line 42, /Volumes/HD/Documents/JK/git/wad2015/css/template.scss */
 .bgWhite {
   background: white; }
 
-/* line 36, /Volumes/HD/Documents/JK/git/wad2015/css/template.scss */
+/* line 46, /Volumes/HD/Documents/JK/git/wad2015/css/template.scss */
 .introducing {
   height: 100% !important; }
 
-/* line 41, /Volumes/HD/Documents/JK/git/wad2015/css/template.scss */
+/* line 51, /Volumes/HD/Documents/JK/git/wad2015/css/template.scss */
 .wad2015 {
   padding: 100px 0;
   color: white;
   line-height: 40px; }
-  /* line 45, /Volumes/HD/Documents/JK/git/wad2015/css/template.scss */
+  /* line 55, /Volumes/HD/Documents/JK/git/wad2015/css/template.scss */
   .wad2015 .logoWAD {
     vertical-align: middle; }
-  /* line 49, /Volumes/HD/Documents/JK/git/wad2015/css/template.scss */
+  /* line 59, /Volumes/HD/Documents/JK/git/wad2015/css/template.scss */
   .wad2015 h2 {
     text-align: right;
     margin-bottom: 20px;
     text-transform: uppercase; }
 
-/* line 64, /Volumes/HD/Documents/JK/git/wad2015/css/template.scss */
-.borderDashed {
-  border-left: 1px dashed #ffffff; }
+/* line 66, /Volumes/HD/Documents/JK/git/wad2015/css/template.scss */
+.registration {
+  padding: 100px 0;
+  color: white;
+  line-height: 20px;
+  font-size: 12px; }
+  /* line 71, /Volumes/HD/Documents/JK/git/wad2015/css/template.scss */
+  .registration p {
+    margin: 20px 0; }
+  /* line 74, /Volumes/HD/Documents/JK/git/wad2015/css/template.scss */
+  .registration h2 {
+    margin-bottom: 20px;
+    text-transform: uppercase; }
 
-/* line 78, /Volumes/HD/Documents/JK/git/wad2015/css/template.scss */
+/* line 80, /Volumes/HD/Documents/JK/git/wad2015/css/template.scss */
+.last-medical {
+  padding: 100px 0;
+  color: white;
+  line-height: 20px; }
+  /* line 84, /Volumes/HD/Documents/JK/git/wad2015/css/template.scss */
+  .last-medical p {
+    margin: 20px 0; }
+  /* line 87, /Volumes/HD/Documents/JK/git/wad2015/css/template.scss */
+  .last-medical h2 {
+    margin-bottom: 20px;
+    text-transform: uppercase; }
+
+/* line 93, /Volumes/HD/Documents/JK/git/wad2015/css/template.scss */
+.partners {
+  padding: 100px 0;
+  color: #2a2a28;
+  line-height: 20px; }
+
+/* line 99, /Volumes/HD/Documents/JK/git/wad2015/css/template.scss */
+.footer {
+  padding: 100px 0;
+  color: #2a2a28;
+  line-height: 20px; }
+
+/* line 105, /Volumes/HD/Documents/JK/git/wad2015/css/template.scss */
 .svg-pink {
   fill: #d20057; }
 
-/* line 81, /Volumes/HD/Documents/JK/git/wad2015/css/template.scss */
+/* line 108, /Volumes/HD/Documents/JK/git/wad2015/css/template.scss */
 .svg-darkgrey {
   fill: #1d1d1b; }
 
-/* line 84, /Volumes/HD/Documents/JK/git/wad2015/css/template.scss */
+/* line 111, /Volumes/HD/Documents/JK/git/wad2015/css/template.scss */
 .svg-mediumgrey {
   fill: #2a2a28; }
 
-/* line 87, /Volumes/HD/Documents/JK/git/wad2015/css/template.scss */
+/* line 114, /Volumes/HD/Documents/JK/git/wad2015/css/template.scss */
 .svg-white {
   fill: #fff; }
 
-/* line 90, /Volumes/HD/Documents/JK/git/wad2015/css/template.scss */
+/* line 117, /Volumes/HD/Documents/JK/git/wad2015/css/template.scss */
 .svg-reverse {
   -webkit-transform-style: preserve-3d;
   -khtml-transform-style: preserve-3d;
@@ -205,22 +246,86 @@ svg {
   -o-transform: rotateY(180deg);
   transform: rotateY(180deg); }
 
-/* line 95, /Volumes/HD/Documents/JK/git/wad2015/css/template.scss */
+/* line 122, /Volumes/HD/Documents/JK/git/wad2015/css/template.scss */
 .pos-bot {
   width: 100%;
   position: absolute;
   bottom: 0; }
 
-/* line 101, /Volumes/HD/Documents/JK/git/wad2015/css/template.scss */
+/* line 128, /Volumes/HD/Documents/JK/git/wad2015/css/template.scss */
 .arrowSlide {
   position: relative;
   margin: 40px auto;
   width: 60px;
   text-align: center; }
 
-/* line 108, /Volumes/HD/Documents/JK/git/wad2015/css/template.scss */
+/* line 135, /Volumes/HD/Documents/JK/git/wad2015/css/template.scss */
 .svgSplit {
   padding: 0;
   mading: 0; }
+
+@media (max-width: 767px) {
+  /* line 141, /Volumes/HD/Documents/JK/git/wad2015/css/template.scss */
+  .borderDashed {
+    border-left: none;
+    border-top: 1px dashed #ffffff; }
+ }
+
+@media (min-width: 768px) {
+  /* line 144, /Volumes/HD/Documents/JK/git/wad2015/css/template.scss */
+  .borderDashed {
+    border-left: none;
+    border-top: 1px dashed #ffffff; }
+ }
+
+@media (min-width: 992px) {
+  /* line 147, /Volumes/HD/Documents/JK/git/wad2015/css/template.scss */
+  .borderDashed {
+    border-top: none;
+    border-left: 1px dashed #ffffff; }
+
+  /* line 149, /Volumes/HD/Documents/JK/git/wad2015/css/template.scss */
+  .table-column container {
+    display: table; }
+  /* line 152, /Volumes/HD/Documents/JK/git/wad2015/css/template.scss */
+  .table-column [class*="col-"] {
+    float: none;
+    display: table-cell;
+    vertical-align: top; }
+
+  /* line 159, /Volumes/HD/Documents/JK/git/wad2015/css/template.scss */
+  .no-table-column container {
+    display: inline; }
+  /* line 162, /Volumes/HD/Documents/JK/git/wad2015/css/template.scss */
+  .no-table-column [class*="col-"] {
+    float: left;
+    display: inline;
+    vertical-align: top; }
+ }
+
+@media (min-width: 1200px) {
+  /* line 170, /Volumes/HD/Documents/JK/git/wad2015/css/template.scss */
+  .borderDashed {
+    border-top: none;
+    border-left: 1px dashed #ffffff; }
+
+  /* line 172, /Volumes/HD/Documents/JK/git/wad2015/css/template.scss */
+  .table-column container {
+    display: table; }
+  /* line 175, /Volumes/HD/Documents/JK/git/wad2015/css/template.scss */
+  .table-column [class*="col-"] {
+    float: none;
+    display: table-cell;
+    vertical-align: top; }
+
+  /* line 182, /Volumes/HD/Documents/JK/git/wad2015/css/template.scss */
+  .no-table-column container {
+    display: inline; }
+  /* line 185, /Volumes/HD/Documents/JK/git/wad2015/css/template.scss */
+  .no-table-column [class*="col-"] {
+    float: left;
+    display: inline;
+    vertical-align: top; }
+ }
 
 /*# sourceMappingURL=template.css.map */

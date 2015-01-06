@@ -6,8 +6,18 @@ html,body{height: 100%;}
 
 body{
     background:#fefefe;
-    background:url('../images/bgWAD2015.jpg') 50% 0;
+    background:url('../images/bgWAD2015.jpg') center 0;
     background-attachment : fixed;
+    background-size: cover;
+}
+
+//*{
+//    @include transition(all, .5s, ease-in);
+//}
+
+.vignette{
+    margin-bottom: 30px;
+    background: rgba(red, 1);
 }
 
 svg{display:block;}
@@ -43,7 +53,7 @@ svg{display:block;}
     color:white;
     line-height:40px;
     & .logoWAD{
-//        line-height:380px;
+        //        line-height:380px;
         vertical-align:middle;
     }
     & h2{
@@ -51,28 +61,45 @@ svg{display:block;}
         margin-bottom: 20px;
         text-transform: uppercase;
     }
-//    & container{
-//        display:table;
-//    }
-//    & [class*="col-"] {
-//        float:none;
-//        display:table-cell;
-//        vertical-align:top;
-//    }
 }
 
-.borderDashed{border-left:1px dashed #ffffff;}
-
 .registration{
+    padding:100px 0;
+    color:white;
+    line-height:20px;
+    font-size: 12px;
+    & p{
+        margin:20px 0;
+    }
+    & h2{
+        margin-bottom: 20px;
+        text-transform: uppercase;
+    }
 }
 
 .last-medical{
+    padding:100px 0;
+    color:white;
+    line-height:20px;
+    & p{
+        margin:20px 0;
+    }
+    & h2{
+        margin-bottom: 20px;
+        text-transform: uppercase;
+    }
 }
 
 .partners{
+    padding:100px 0;
+    color:$mediumgrey;
+    line-height:20px;
 }
 
 .footer{
+    padding:100px 0;
+    color:$mediumgrey;
+    line-height:20px;
 }
 
 .svg-pink{
@@ -108,4 +135,57 @@ svg{display:block;}
 .svgSplit{
     padding:0;
     mading:0;
+}
+
+@media(max-width:767px){
+    .borderDashed{border-left:none; border-top:1px dashed #ffffff;}
+}
+@media(min-width:768px){
+    .borderDashed{border-left:none; border-top:1px dashed #ffffff;}
+}
+@media(min-width:992px){
+    .borderDashed{border-top:none; border-left:1px dashed #ffffff;}
+    .table-column{
+        & container{
+            display:table;
+        }
+        & [class*="col-"] {
+            float:none;
+            display:table-cell;
+            vertical-align:top;
+        }
+    }
+    .no-table-column{
+        & container{
+            display:inline;
+        }
+        & [class*="col-"] {
+            float:left;
+            display:inline;
+            vertical-align:top;
+        }
+    }
+}
+@media(min-width:1200px){
+    .borderDashed{border-top:none; border-left:1px dashed #ffffff;}
+    .table-column{
+        & container{
+            display:table;
+        }
+        & [class*="col-"] {
+            float:none;
+            display:table-cell;
+            vertical-align:top;
+        }
+    }
+    .no-table-column{
+        & container{
+            display:inline;
+        }
+        & [class*="col-"] {
+            float:left;
+            display:inline;
+            vertical-align:top;
+        }
+    }
 }
