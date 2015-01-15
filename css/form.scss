@@ -1,0 +1,117 @@
+@import "css3-mixins.scss";
+@import "colors.scss";
+
+input{
+    height: 50px;
+}
+
+input.form-control{
+    background: none;
+    border:0;
+    border-bottom:1px solid rgba($darkgrey, .3);
+    @include border-radius(0);
+    @include box-shadow(0,0,0,rgba(black,0));
+    margin-bottom:25px;
+    outline:none;
+    &:focus{
+        background: white;
+        @include box-shadow(0,0,0,rgba(black,0));
+        border-bottom:1px solid $pink;
+        @include transition(all, .8s, ease-in);
+    }
+    &.fail{
+        border:1px solid red !important;
+        background: rgba(red, .3) !important;
+        color:white !important;
+    }
+}
+
+.fail{
+    border:1px solid red !important;
+    background: rgba(red, .3) !important;
+    color:white !important;
+}
+
+.message-fail{
+    border:1px solid red !important;
+    background: rgba(red, .3) !important;
+    color:white !important;
+    line-height: 34px;
+    margin-bottom:20px;
+}
+
+.message-success{
+    border:1px solid green !important;
+    background: rgba(green, .3) !important;
+    color:white !important;
+    line-height: 34px;
+    margin-bottom:20px;
+}
+
+label{
+    background: none;
+    border:0;
+    border-bottom:1px solid rgba($darkgrey, .3);
+    @include border-radius(0);
+    @include box-shadow(0,0,0,rgba(black,0));
+    margin-bottom:25px;
+    outline:none;
+    line-height: 50px;
+    cursor:pointer;
+    &:focus{
+        background: white;
+        @include box-shadow(0,0,0,rgba(black,0));
+        border-bottom:1px solid $pink;
+        @include transition(all, .8s, ease-in);
+    }
+}
+
+label.checkbox{
+    width: 100% !important;
+    span{
+        float:right;
+    }
+    p{
+        float:left;
+        line-height:34px;
+    }
+}
+input[type="checkbox"] {
+    display:none;
+}
+
+input[type="checkbox"] + label {
+    width: 100%;
+    color:#f2f2f2;
+    font-family:Arial, sans-serif;
+    font-size:14px;
+}
+
+input[type="checkbox"] + label span {
+    display:inline-block;
+    width:19px;
+    height:34px;
+    //    margin:-1px 4px 0 0;
+    vertical-align:middle;
+    background:url(../images/checkbox.png) left top no-repeat;
+    cursor:pointer;
+}
+
+input[type="checkbox"]:checked + label span {
+    background:url(../images/checkbox.png) -19px top no-repeat;
+}
+
+.btn-custom{
+    @include border-radius(0px);
+    background: black;
+    color:white;
+    outline:none;
+    padding:0 20px;
+    &:hover{
+        color:white;
+        background: $mediumgrey;
+    }
+}
+
+
+

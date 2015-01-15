@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>WAD 2015</title>
+
+        <!-- Bootstrap Core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Custom CSS -->
+        <link href="css/template.css" rel="stylesheet">
+        <link href="css/pages.css" rel="stylesheet">
+
+        <!-- Custom Fonts -->
+        <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+        <!--	Font Type	-->
+        <script src="//use.typekit.net/vgt0ndc.js"></script>
+        <script>try{Typekit.load();}catch(e){}</script>
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+    </head>
+
+    <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+        <!-- Modals -->
+        <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-md">
+                <div class="modal-content modal-custom">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <div class="row">
+                        <div class="col-md-12 bgDarkGrey" id="connexion">
+                            <form action="">
+                                <input type="text" class="form-control" placeholder="E-mail">
+                                <input type="text" class="form-control" placeholder="Mot de passe">
+                                <a href="#">Mot de passe oublié ?</a>
+                                <input type="submit" class="btn btn-custom" value="Connexion">
+                            </form>
+                        </div>
+                        <div class="col-md-12 bgDarkGrey" id="motdepasse">
+                            <form action="">
+                                <input type="text" class="form-control" placeholder="E-mail">
+                                <a href="#">Accéder à mon compte</a>
+                                <input type="submit" class="btn btn-custom" value="Envoyer">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="register-patient" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content modal-custom">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <div class="row">
+                        <div class="col-md-5">
+                            <div class="col-lg-12 steps">
+                                <div class="iconSteps pull-left img-circle">1</div> 
+                                <div class="pull-left">Inscrivez-vous</div>
+                            </div>
+                            <div class="col-lg-12 steps">
+                                <div class="iconSteps pull-left img-circle">2</div> 
+                                <div class="pull-left">Trouvez un médecin</div>
+                            </div>
+                            <div class="col-lg-12 steps">
+                                <div class="iconSteps pull-left img-circle">3</div> 
+                                <div class="pull-left">Prenez un rendez-vous</div>
+                            </div>
+                        </div>
+                        <div class="col-md-7 bgDarkGreyLight">
+                            <form action="">
+                                <input type="text" class="form-control" placeholder="Nom">
+                                <input type="text" class="form-control" placeholder="Prénom">
+                                <input type="text" class="form-control" placeholder="E-mail">
+                                <input type="text" class="form-control" placeholder="Confirmation e-mail">
+                                <input type="password" class="form-control" placeholder="Mot de passe">
+                                <input type="password" class="form-control" placeholder="Confirmation mot de passe">
+                                <input type="password" class="form-control" placeholder="Adresse">
+                                <input type="password" class="form-control" placeholder="Code postal">
+                                <input type="submit" class="btn btn-custom" value="Valider">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="register-medecin" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content modal-custom">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <div class="row">
+                        <div class="col-md-5">
+                            <div class="col-lg-12 steps">
+                                <div class="iconSteps pull-left img-circle">1</div> 
+                                <div class="pull-left">Inscrivez-vous</div>
+                            </div>
+                            <div class="col-lg-12 steps">
+                                <div class="iconSteps pull-left img-circle">2</div> 
+                                <div class="pull-left">Complétez votre profil</div>
+                            </div>
+                            <div class="col-lg-12 steps">
+                                <div class="iconSteps pull-left img-circle">3</div> 
+                                <div class="pull-left">Précisez vos horaires</div>
+                            </div>
+                        </div>
+                        <div class="col-md-7 bgDarkGreyLight">
+                            <form action="">
+                                <label for="specialite" class="select">
+                                    <select name="specialite" id="" class="form-control" placeholder="votre spécialité" data-show-icon="true">
+                                        <option value="" disabled selected>Votre spécialité</option>
+                                        <option value="">Dermathologue</option>
+                                        <option value="">Dermathologue</option>
+                                        <option value="">Dermathologue</option>
+                                        <option value="">Dermathologue</option>
+                                    </select>
+                                </label>
+                                <input type="text" class="form-control" placeholder="Nom">
+                                <input type="text" class="form-control" placeholder="Prénom">
+                                <input type="text" class="form-control" placeholder="E-mail">
+                                <input type="text" class="form-control" placeholder="Confirmation e-mail">
+                                <input type="password" class="form-control" placeholder="Mot de passe">
+                                <input type="password" class="form-control" placeholder="Confirmation mot de passe">
+                                <input type="submit" class="btn btn-custom" value="Valider">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation -->
+        <nav class="navbar pages navbar-custom navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <a class="navbar-brand page-scroll" href="#page-top">
+                        <img src="images/logoWAD.svg" alt="">
+                    </a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                    <ul class="nav navbar-nav">
+                        <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                        <li class="hidden">
+                            <a href="#page-top"></a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#whatis">C'est quoi ?</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#trouver">Trouver un médecin</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#partners">Partenaires</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#contact">Contact</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#" data-toggle="modal" data-target="#login">Connexion</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#inscription">Inscription</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#inscription" data-toggle="modal" data-target="#register-medecin">Participer</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container -->
+        </nav>
+
+        <section class="breaker-fluid bgWhite">
+            <img class="svg svg-darkgrey svg-breaker" src="images/breaker.svg">
+        </section>
+
+        <!-- Profil medecin -->
+        <section id="profil-medecin" class="bgDarkGrey">
+            <div class="container">
+                <div class="row vertical-center">
+                    <div class="col-md-7 vertical-center">
+                        <div class="col-sm-3">
+                            <div class="photo"><img class="img-circle" src="images/youtubers/1-Avner%20&%20Vous.jpg" alt=""></div>
+                        </div>
+                        <div class="col-sm-9 row">
+                            <div class="col-xs-12">
+                                <h1>Dr. Olivier Giraut</h1>
+                            </div>
+                            <div class="col-xs-10">
+                                <h3>Médecin esthetique</h3>
+                                <h5><i class="fa fa-phone"></i> 0102030405</h5>
+                            </div>
+                            <div class="col-xs-2"><img class="svg" src="images/acclabelwhite.svg" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="col-md-5 clearfix">
+                        <h6><span class="pink">Prendre un rendez-vous</span> avec votre médecin</h6>
+                        <p>Rien de plus simple. Une fois le praticien sélectionné, cliquez sur un créneau horaire disponible. Vous serez ensuite redirigé vers la page d’inscription. Après avoir renseigné vos informations personnelles, vous recevrez un message de confirmation avec l’horaire et les coordonnées du médecin pour votre rencontre du 21 Mars.</p>
+                        <div class="table-horaire text-center row">
+                            <div class="col-sm-12">
+                                <div class="title">Matinée</div>
+                                <div class="horaire">
+                                    <div class="heure inactive">09:00</div>
+                                    <div class="heure inactive">09:30</div>
+                                    <div class="heure">10:00</div>
+                                    <div class="heure">10:30</div>
+                                    <div class="heure">11:00</div>
+                                    <div class="heure">11:30</div>
+                                    <div class="heure active">12:00</div>
+                                    <div class="heure">12:30</div>
+                                </div>
+                            </div>
+                            <div class="table-separator">&nbsp;</div>
+                            <div class="col-sm-12">
+                                <div class="title">Après-midi</div>
+                                <div class="horaire">
+                                    <div class="heure inactive">14:00</div>
+                                    <div class="heure inactive">14:30</div>
+                                    <div class="heure">15:00</div>
+                                    <div class="heure">15:30</div>
+                                    <div class="heure">16:00</div>
+                                    <div class="heure">16:30</div>
+                                    <div class="heure active">17:00</div>
+                                    <div class="heure">17:30</div>
+                                    <div class="heure active">18:00</div>
+                                    <div class="heure">18:30</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="breaker-fluid bgDarkGrey">
+            <img class="svg svg-lightgrey svg-reverse svg-breaker" src="images/breaker.svg">
+        </section>
+
+        <!-- Infos -->
+        <section id="infos-profile" class="bgLightGrey">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 text-center">
+                        <h2><i class="fa fa-eyedropper pink"></i></h2>
+                        <h4>Pratiques</h4>
+                        <div class="col-lg-12 list-pratique">Test</div>
+                        <div class="col-lg-12 list-pratique">Test</div>
+                        <div class="col-lg-12 list-pratique">Test</div>
+                        <div class="col-lg-12 list-pratique">Test</div>
+                        <div class="col-lg-12 list-pratique">Test</div>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <h2><i class="fa fa-university pink"></i></h2>
+                        <h4>Diplômes</h4>
+                        <p class="text-left">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, quidem quibusdam, suscipit adipisci perferendis laborum fugit id ipsa. Qui suscipit similique iure cupiditate nesciunt dolores repellendus ullam eum maiores error nulla neque perspiciatis reiciendis minus tempora sapiente, nisi, ut recusandae reprehenderit! Enim, aspernatur adipisci possimus quae culpa placeat et eos?
+                        </p>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <h2><i class="fa fa-map-marker pink"></i></h2>
+                        <h4>Coordonnées</h4>
+                        <div class="videoWrapper map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2625.6566858634924!2d2.3179792999999993!3d48.8456869!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e67032614bf26d%3A0x89fe83334cf8faa8!2s20+Boulevard+du+Montparnasse%2C+75015+Paris!5e0!3m2!1sen!2sfr!4v1420993767569" width="100%" height="auto" frameborder="0" style="border:0"></iframe>
+                        </div>
+                        <ul class="text-right infos-map">
+                            <li><i class="fa fa-map-marker"></i> <p>20 boulevard du Montparnasse</p></li>
+                            <li><i class="fa fa-phone"></i> <p>0102030405</p></li>
+                            <li><i class="fa fa-chevron-right"></i> <p><a href="http://www.monsite-esthetique.fr">www.monsite-esthetique.fr</a></p></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer id="contact" class="bgWhite">
+            <div class="container vertical-center">
+                <div class="col-sm-6 col-md-4 text-left vertical-center">
+                    <div class="col-xs-6">
+                        <img src="images/logoDPartners.svg" alt="">
+                    </div>
+                    <div class="col-xs-6">
+                        <ul>
+                            <li><a href="#">Cgu</a></li>
+                            <li><a href="#">Inscriptions</a></li>
+                            <li><a href="#">À propos</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 text-center">
+                    <div class="col-xs-4"><a href="#"><img src="images/icoFB.svg" class="svg ico-feed img-circle" alt=""></a></div>
+                    <div class="col-xs-4"><a href="#"><img src="images/icoTW.svg" class="svg ico-feed img-circle" alt=""></a></div>
+                    <div class="col-xs-4"><a href="#"><img src="images/icoGP.svg" class="svg ico-feed img-circle" alt=""></a></div>
+                </div>
+                <div class="col-md-4 text-left">
+                    <div class="col-xs-8">
+                        <h6>Nous</h6>
+                        <h5>Contacter</h5>
+                    </div>
+                    <div class="col-xs-4 text-right">
+                        <i class="fa fa-paper-plane fa-3x"></i>
+                    </div>
+                    <div class="col-xs-12 text-center">
+                        <form action="">
+                            <input class="form-control" type="text" placeholder="Prénom">
+                            <input class="form-control" type="text" placeholder="Nom">
+                            <input class="form-control" type="text" placeholder="E-mail">
+                            <input class="form-control" type="text" placeholder="Message">
+                            <input class="btn btn-custom" type="submit" value="Transmettre">
+                        </form>						
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- jQuery -->
+        <script src="js/jquery.js"></script>
+
+        <!-- Bootstrap Core JavaScript -->
+        <script src="js/bootstrap.min.js"></script>
+
+        <!-- Plugin JavaScript -->
+        <script src="js/jquery.easing.min.js"></script>
+
+        <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
+
+        <!-- Custom Theme JavaScript -->
+        <script src="js/pages.js"></script>
+
+    </body>
+
+</html>

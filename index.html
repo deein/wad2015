@@ -1,205 +1,452 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
+
     <head>
+
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>WAD - 2015</title>
+        <meta name="description" content="">
+        <meta name="author" content="">
 
-        <!-- Bootstrap -->
+        <title>WAD 2015</title>
+
+        <!-- Bootstrap Core CSS -->
         <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Custom CSS -->
         <link href="css/template.css" rel="stylesheet">
 
-        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- Custom Fonts -->
+        <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+        <!--	Font Type	-->
+        <script src="//use.typekit.net/vgt0ndc.js"></script>
+        <script>try{Typekit.load();}catch(e){}</script>
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
-<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
+
     </head>
-    <body>
-        <!-- <nav class="navbar navbar-default navbar-static-top" role="navigation">
-Brand and toggle get grouped for better mobile display
-<div class="container">
-<div class="navbar-header">
-<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-<span class="sr-only">Toggle navigation</span>
-<span class="icon-bar"></span>
-<span class="icon-bar"></span>
-<span class="icon-bar"></span>
-</button>
-<a class="navbar-brand" href="#">Brand</a>
-</div>
 
-Collect the nav links, forms, and other content for toggling
-<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-<ul class="nav navbar-nav">
-<li><a href="#">Link <span class="sr-only">(current)</span></a></li>
-<li><a href="#">Link</a></li>
-</ul>
-</div>
-</div>
-</nav> -->
+    <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
-        <section class="container-fluid introducing">
-            <section class="row-fluid">
-                <section class="col-md-12">
-                    <section class="container">
-                        <section class="col-md-4">1</section>
-                        <section class="col-md-8">2</section>
-                        <section class="col-md-12">3</section>
-                    </section>
-                </section>
-                <section class="col-md-12 svgSplit svg-pink pos-bot">
-                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                         viewBox="0 0 500 13.3" enable-background="new 0 0 500 13.3" xml:space="preserve">
-                        <polygon points="500,13.3 0,13.3 0,0 113.3,10 420,0 500,12 " transform="scale(1.1) translate(-1, 0)" />
-                    </svg>
-                    <section class="col-md-12 svgSplit bgPink">
-                        <section class="container">
-                            <div class="arrowSlide svg-white">
-                                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                     viewBox="0 0 347.6 174.5" enable-background="new 0 0 347.6 174.5" xml:space="preserve">
-                                    <path d="M173.8,174.5L2.4,13c-3-2.8-3.2-7.6-0.3-10.6c2.8-3,7.6-3.2,10.6-0.3l161.1,151.8L334.9,2c3-2.8,7.8-2.7,10.6,0.3
-                                             c2.8,3,2.7,7.8-0.3,10.6L173.8,174.5z"/>
-                                </svg>
+        <!-- Modals -->
+        <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-md">
+                <div class="modal-content modal-custom">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <div class="row">
+                        <div class="col-md-12 bgDarkGrey" id="connexion">
+                            <form action="">
+                                <input type="text" class="form-control" placeholder="E-mail">
+                                <input type="text" class="form-control" placeholder="Mot de passe">
+                                <a href="#">Mot de passe oublié ?</a>
+                                <input type="submit" class="btn btn-custom" value="Connexion">
+                            </form>
+                        </div>
+                        <div class="col-md-12 bgDarkGrey" id="motdepasse">
+                            <form action="">
+                                <input type="text" class="form-control" placeholder="E-mail">
+                                <a href="#">Accéder à mon compte</a>
+                                <input type="submit" class="btn btn-custom" value="Envoyer">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="register-patient" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content modal-custom">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <div class="row">
+                        <div class="col-md-5">
+                            <div class="col-lg-12 steps">
+                                <div class="iconSteps pull-left img-circle">1</div> 
+                                <div class="pull-left">Inscrivez-vous</div>
                             </div>
-                        </section>
-                    </section>
-                </section>
-            </section>
+                            <div class="col-lg-12 steps">
+                                <div class="iconSteps pull-left img-circle">2</div> 
+                                <div class="pull-left">Trouvez un médecin</div>
+                            </div>
+                            <div class="col-lg-12 steps">
+                                <div class="iconSteps pull-left img-circle">3</div> 
+                                <div class="pull-left">Prenez un rendez-vous</div>
+                            </div>
+                        </div>
+                        <div class="col-md-7 bgDarkGreyLight">
+                            <form action="">
+                                <input type="text" class="form-control" placeholder="Nom">
+                                <input type="text" class="form-control" placeholder="Prénom">
+                                <input type="text" class="form-control" placeholder="E-mail">
+                                <input type="text" class="form-control" placeholder="Confirmation e-mail">
+                                <input type="password" class="form-control" placeholder="Mot de passe">
+                                <input type="password" class="form-control" placeholder="Confirmation mot de passe">
+                                <input type="password" class="form-control" placeholder="Adresse">
+                                <input type="password" class="form-control" placeholder="Code postal">
+                                <input type="submit" class="btn btn-custom" value="Valider">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="register-medecin" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content modal-custom">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <div class="row">
+                        <div class="col-md-5">
+                            <div class="col-lg-12 steps">
+                                <div class="iconSteps pull-left img-circle">1</div> 
+                                <div class="pull-left">Inscrivez-vous</div>
+                            </div>
+                            <div class="col-lg-12 steps">
+                                <div class="iconSteps pull-left img-circle">2</div> 
+                                <div class="pull-left">Complétez votre profil</div>
+                            </div>
+                            <div class="col-lg-12 steps">
+                                <div class="iconSteps pull-left img-circle">3</div> 
+                                <div class="pull-left">Précisez vos horaires</div>
+                            </div>
+                        </div>
+                        <div class="col-md-7 bgDarkGreyLight">
+                            <form action="">
+                                <label for="specialite" class="select">
+                                    <select name="specialite" id="" class="form-control" placeholder="votre spécialité" data-show-icon="true">
+                                        <option value="" disabled selected>Votre spécialité</option>
+                                        <option value="">Dermathologue</option>
+                                        <option value="">Dermathologue</option>
+                                        <option value="">Dermathologue</option>
+                                        <option value="">Dermathologue</option>
+                                    </select>
+                                </label>
+                                <input type="text" class="form-control" placeholder="Nom">
+                                <input type="text" class="form-control" placeholder="Prénom">
+                                <input type="text" class="form-control" placeholder="E-mail">
+                                <input type="text" class="form-control" placeholder="Confirmation e-mail">
+                                <input type="password" class="form-control" placeholder="Mot de passe">
+                                <input type="password" class="form-control" placeholder="Confirmation mot de passe">
+                                <input type="submit" class="btn btn-custom" value="Valider">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <a class="navbar-brand page-scroll" href="#page-top">
+                        <img src="images/logoWAD.svg" alt="">
+                    </a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                    <ul class="nav navbar-nav">
+                        <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                        <li class="hidden">
+                            <a href="#page-top"></a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#whatis">C'est quoi ?</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#trouver">Trouver un médecin</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#partners">Partenaires</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#contact">Contact</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#page-top">Connexion</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#inscription">Inscription</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container -->
+        </nav>
+
+        <!-- Intro Header -->
+        <header class="intro">
+            <div class="intro-body">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="logoWAD">
+                            <div class="col-lg-12 text-center">                           
+                                <img src="images/logoWAD.svg" alt="">
+                            </div>
+                            <div class="col-lg-12 text-center" style="margin-bottom:200px;">                           
+                                <h2>Le samedi 21 mars 2015</h2>
+                                <p>Dès aujourd'hui prenez votre rendez-vous pour le 21mars, <br />seul ou accompagné et profitez de conseils et d'informations sur les pratiques de soins esthétiques</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+                            <div class="col-sm-6 participer hidden-xs">
+                                <a class="page-scroll" href="#inscription">
+                                    <div class="col-xs-3"><i class="fa fa-newspaper-o fa-4x"></i></div>
+                                    <div class="col-xs-9 text-left">
+                                        <h2>Participer</h2>
+                                        <h3>À l'évènement</h3>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-sm-6 participer hidden-sm hidden-md hidden-lg">
+                                <a class="page-scroll" href="#inscription">
+                                    <div class="col-xs-9 text-right">
+                                        <h2>Participer</h2>
+                                        <h3>À l'évènement</h3>
+                                    </div>
+                                    <div class="col-xs-3"><i class="fa fa-newspaper-o fa-4x"></i></div>
+                                </a>
+                            </div>
+                            <div class="col-sm-6 acceder" data-toggle="modal" data-target="#login">
+                                <div class="col-xs-9 text-right">
+                                    <h2>Accéder</h2>
+                                    <h3>À mon compte</h3>
+                                </div>
+                                <div class="col-xs-3"><i class="fa fa-sign-in fa-4x"></i></div>
+                            </div>
+                            <div class="dashedLine hidden-xs">&nbsp;</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="breaker">
+                <div class="row">
+                    <div id="trouver" class="col-lg-6 col-lg-offset-3 form-recherche">
+                        <h4>Trouver un médecin participant près de chez vous</h4>
+                        <hr/>
+                        <form class="form-intro" action="">
+                            <div class="col-xs-12 col-sm-8" style="padding:0;">
+                                <input type="text" placeholder="Ville ou département">
+                                <i class="fa fa-map-marker fa-2x"></i>
+                            </div>
+                            <input class="col-xs-12 col-sm-4 btn btn-custom" type="submit" value="Rechercher">
+                        </form>
+                    </div>
+                </div>
+                <img class="svg svg-breaker svg-pink" src="images/breaker.svg">
+                <div class="row">
+                    <div class="container-fluid arrowSlider bgPink">
+                        <div class="arrow">
+                            <img src="images/arrow.svg" class="svg svg-white" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- What Is Section -->
+        <section id="whatis" class="bgPink text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="col-md-12 vertical-center">
+                            <div class="col-md-3">
+                                <img src="images/logoWADwhite.svg"/>
+                            </div>
+                            <div class="col-md-1 col-md-offset-1 border hidden-xs hidden-sm">&nbsp;</div>
+                            <div class="col-md-7">
+                                <h2 class="text-right">Qu’est ce que WAD ?</h2>
+                                <p>World Aesthetic Day est la première journée dédiée à informer et accueillir le grand public désireux de mieux connaitre la médecine et la chirurgie esthétique et ses pratiques.</p>
+                                <p>
+                                    Organisé de façon participative, WAD est l’occasion pour les patients et praticiens d’initier un vrai dialogue et de devenir acteurs en s’appropriant ce nouveau rendez-vous pour que WAD soit leur journée mondiale de l’esthétique médicale et chirurgicale.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section class="container-fluid">
-            <section class="row-fluid">
-                <section class="col-md-12 wad2015 bgPink table-column">
-                    <section class="container">
-                        <section class="col-md-2 col-sm-12 logoWAD">WAD 2015</section>
-                        <section class="col-md-1 hidden-xs hidden-sm">&nbsp;</section>
-                        <section class="col-md-1 borderDashed hidden-xs hidden-sm">&nbsp;</section>
-                        <section class="col-md-8">
-                            <h2>Qu'est-ce que Wad ?</h2>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit quis ad error maxime esse provident, voluptate veritatis amet ipsa dolorem necessitatibus excepturi sequi ducimus molestiae obcaecati distinctio nemo adipisci quia, consequuntur consequatur corporis. Dolorem provident dolorum ullam voluptas earum. Omnis praesentium, atque ut, similique quisquam optio odio. Culpa beatae, laboriosam quaerat quisquam architecto temporibus ducimus, magnam amet, omnis sed voluptatum doloremque. Doloremque, amet beatae. Voluptatem rerum repudiandae deleniti voluptas adipisci doloribus facere a explicabo deserunt harum sit illum est quia libero laudantium, sunt omnis minima beatae ab similique iure ad blanditiis. Dicta consequuntur fugit alias a itaque adipisci eos veniam?
-                            </p>
-                        </section>
-                    </section>
-                </section>
-                <section class="col-md-12 svgSplit bgPink svg-darkgrey svg-reverse">
-                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                         viewBox="0 0 500 13.3" enable-background="new 0 0 500 13.3" xml:space="preserve">
-                        <polygon points="500,13.3 0,13.3 0,0 113.3,10 420,0 500,12 " transform="scale(1.1) translate(-1, 0)" />
-                    </svg>
-                </section>
-                <section class="col-md-12 registration bgDarkGrey table-column">
-                    <section class="container">
-                        <section class="col-md-5 text-center no-table-column">
-                            <section class="col-lg-12 vignette">test</section>
-                            <h2>Je suis patient</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur sapiente voluptates aut, iste hic rem praesentium delectus quibusdam distinctio fugiat odit culpa ducimus magnam repudiandae id harum nulla laborum quos.</p>
-                            <div class="btn btn-default">Je m'inscris</div>
-                        </section>
-                        <section class="col-md-1">&nbsp;</section>
-                        <section class="col-md-1 borderDashed">&nbsp;</section>
-                        <section class="col-md-5 text-center no-table-column">
-                            <section class="col-md-12 vignette">test</section>
-                            <h2>Je suis médecin</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur sapiente voluptates aut, iste hic rem praesentium delectus quibusdam distinctio fugiat odit culpa ducimus magnam repudiandae id harum nulla laborum quos.</p>
-                            <div class="btn btn-default">Je m'inscris</div>
-                        </section>
-                    </section>
-                </section>
-                <section class="col-md-12 svgSplit bgDarkGrey svg-mediumgrey">
-                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                         viewBox="0 0 500 13.3" enable-background="new 0 0 500 13.3" xml:space="preserve">
-                        <polygon points="500,13.3 0,13.3 500,0 " transform="scale(1.1) translate(-1, 0)" />
-                    </svg>
-                </section>
-                <section class="col-md-12 last-medical bgMediumGrey table-column">
-                    <section class="container">
-                        <section class="col-md-2 col-sm-12 logoWAD">
-                            <h2>Les nouveaux</h2>
-                        </section>
-                        <section class="col-md-1 hidden-xs hidden-sm">&nbsp;</section>
-                        <section class="col-md-1 borderDashed hidden-xs hidden-sm">&nbsp;</section>
-                        <section class="col-md-8 no-table-column">
-                            <section class="col-lg-6">1</section>
-                            <section class="col-lg-6">1</section>
-                            <section class="col-lg-6">1</section>
-                            <section class="col-lg-6">1</section>
-                            <section class="col-lg-6">1</section>
-                            <section class="col-lg-6">1</section>
-                        </section>
-                    </section>
-                </section>		
-                <section class="col-md-12 svgSplit bgMediumGrey svg-white">
-                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                         viewBox="0 0 500 13.3" enable-background="new 0 0 500 13.3" xml:space="preserve">
-                        <polygon points="500,13.3 0,13.3 0,0 113.3,10 420,0 500,12 " transform="scale(1.1) translate(-1, 0)" />
-                    </svg>
-                </section>
-                <section class="col-md-12 partners bgWhite table-column">
-                    <section class="container">
-                        <section class="col-md-3">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit consequuntur id dignissimos consequatur maxime earum, accusamus beatae unde, minus aperiam.
-                        </section>
-                        <section class="col-md-3">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia rem quis, cumque accusantium iste adipisci necessitatibus natus quasi dolorum dolor.
-                        </section>
-                        <section class="col-md-3">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum ut iure facere odit est eum assumenda explicabo optio iste deserunt.
-                        </section>
-                    </section>
-                </section>	
-                <footer class="col-md-12 footer bgLightGrey table-column">
-                    <section class="container">
-                        <section class="col-md-3">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit consequuntur id dignissimos consequatur maxime earum, accusamus beatae unde, minus aperiam.
-                        </section>
-                        <section class="col-md-3">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia rem quis, cumque accusantium iste adipisci necessitatibus natus quasi dolorum dolor.
-                        </section>
-                        <section class="col-md-3">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum ut iure facere odit est eum assumenda explicabo optio iste deserunt.
-                        </section>
-                    </section>
-                </footer>
-            </section>
+        <section class="breaker-fluid bgPink">
+            <img class="svg svg-darkgrey svg-reverse svg-breaker" src="images/breaker.svg">
         </section>
 
-        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-        <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
-        <!-- Include all compiled plugins (below), or include insectionidual files as needed -->
+        <!-- Inscription Section -->
+        <section id="inscription" class="bgDarkGrey text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="col-md-12 text-center">
+                            <div class="col-sm-5">
+                                <img src="images/icoPatient.png" alt="">
+                                <h2>Je suis patient</h2>
+                                <p>Un médecin, dermatologue, chirurgien vous ouvre ses portes gratuitement et sans engagement.</p>
+                                <button class="btn btn-custom" data-toggle="modal" data-target="#register-patient">Je m'inscris</button>
+                            </div>
+                            <div class="col-sm-1 col-sm-offset-1 border hidden-xs">&nbsp;</div>
+                            <div class="col-sm-5">
+                                <img src="images/icoMedecin.png" alt="">
+                                <h2>Je suis médecin</h2>
+                                <p>Je participe à la première Journée Mondiale de l’Esthétique Médicale et Chirurgicale.</p>
+                                <button class="btn btn-custom" data-toggle="modal" data-target="#register-medecin">Je m'inscris</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="breaker-fluid bgDarkGrey">
+            <img class="svg svg-mediumgrey svg-breaker" src="images/breaker2.svg">
+        </section>
+
+        <!-- Medecins Section -->
+        <section id="medecins" class="bgMediumGrey text-left">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="col-md-12 vertical-center">
+                            <div class="col-md-2 titre">                                
+                                <h3>Les nouveaux</h3>
+                                <h4>médecins inscrits</h4>
+                            </div>
+                            <div class="col-md-1 col-md-offset-1 border hidden-sm hidden-xs">&nbsp;</div>
+                            <div class="col-md-8">
+                                <a class="col-sm-6 vertical-center" href="#">
+                                    <div class="col-xs-4"><img class="img-circle" src="images/youtubers/1-Avner%20&%20Vous.jpg" alt=""></div>
+                                    <div class="col-xs-8">
+                                        <h4>Dr. Olivier Gerbault</h4>
+                                        <h5>Dermathologue</h5>
+                                    </div>
+                                </a>
+                                <a class="col-sm-6 vertical-center" href="#">
+                                    <div class="col-xs-4"><img class="img-circle" src="images/youtubers/1-Avner%20&%20Vous.jpg" alt=""></div>
+                                    <div class="col-xs-8">
+                                        <h4>Dr. Olivier Gerbault</h4>
+                                        <h5>Dermathologue</h5>
+                                    </div>
+                                </a>
+                                <a class="col-sm-6 vertical-center" href="#">
+                                    <div class="col-xs-4"><img class="img-circle" src="images/youtubers/1-Avner%20&%20Vous.jpg" alt=""></div>
+                                    <div class="col-xs-8">
+                                        <h4>Dr. Olivier Gerbault</h4>
+                                        <h5>Dermathologue</h5>
+                                    </div>
+                                </a>
+                                <a class="col-sm-6 vertical-center" href="#">
+                                    <div class="col-xs-4"><img class="svg svg-white bgPink img-circle" src="images/icoMedecin.svg" alt=""></div>
+                                    <div class="col-xs-8">
+                                        <h4>Dr. Olivier Gerbault</h4>
+                                        <h5>Dermathologue</h5>
+                                    </div>
+                                </a>
+                                <a class="col-sm-6 vertical-center" href="#">
+                                    <div class="col-xs-4"><img class="img-circle" src="images/youtubers/1-Avner%20&%20Vous.jpg" alt=""></div>
+                                    <div class="col-xs-8">
+                                        <h4>Dr. Olivier Gerbault</h4>
+                                        <h5>Dermathologue</h5>
+                                    </div>
+                                </a>
+                                <a class="col-sm-6 vertical-center" href="#">
+                                    <div class="col-xs-4"><img class="img-circle" src="images/youtubers/1-Avner%20&%20Vous.jpg" alt=""></div>
+                                    <div class="col-xs-8">
+                                        <h4>Dr. Olivier Gerbault</h4>
+                                        <h5>Dermathologue</h5>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="breaker-fluid bgMediumGrey">
+            <img class="svg svg-white svg-breaker" src="images/breaker.svg">
+        </section>
+
+        <!-- Partners Section -->
+        <section id="partners">
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-md-6">
+                        <a href="http://www.logiderm.fr/" target="_blank"><img src="images/logoLogiderm.png" alt=""></a>
+                    </div>
+                    <div class="col-md-6">
+                        <a href="http://www.vivacy.fr/" target="_blank"><img src="images/logoVivacy.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer id="contact" class="bgLightGrey">
+            <div class="container vertical-center">
+                <div class="col-sm-6 col-md-4 text-left vertical-center">
+                    <div class="col-xs-6">
+                        <img src="images/logoDPartners.svg" alt="">
+                    </div>
+                    <div class="col-xs-6">
+                        <ul>
+                            <li><a href="#">Cgu</a></li>
+                            <li><a href="#">Inscriptions</a></li>
+                            <li><a href="#">À propos</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 text-center">
+                    <div class="col-xs-4"><a href="#"><img src="images/icoFB.svg" class="svg ico-feed img-circle" alt=""></a></div>
+                    <div class="col-xs-4"><a href="#"><img src="images/icoTW.svg" class="svg ico-feed img-circle" alt=""></a></div>
+                    <div class="col-xs-4"><a href="#"><img src="images/icoGP.svg" class="svg ico-feed img-circle" alt=""></a></div>
+                </div>
+                <div class="col-md-4 text-left">
+                    <div class="col-xs-8">
+                        <h6>Nous</h6>
+                        <h5>Contacter</h5>
+                    </div>
+                    <div class="col-xs-4 text-right">
+                        <i class="fa fa-paper-plane fa-3x"></i>
+                    </div>
+                    <div class="col-xs-12 text-center">
+                        <form action="">
+                            <input class="form-control" type="text" placeholder="Prénom">
+                            <input class="form-control" type="text" placeholder="Nom">
+                            <input class="form-control" type="text" placeholder="E-mail">
+                            <input class="form-control" type="text" placeholder="Message">
+                            <input class="btn btn-custom" type="submit" value="Transmettre">
+                        </form>						
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- jQuery -->
+        <script src="js/jquery.js"></script>
+
+        <!-- Bootstrap Core JavaScript -->
         <script src="js/bootstrap.min.js"></script>
 
-        <script>
-            $( document ).ready(function() {				
-                // scrollTo Lite
-                function scrollToAnchor(element, duration){
-                    var aTag = $(element);
-                    $('html,body').animate({scrollTop: aTag.offset().top}, duration);
-                }
+        <!-- Plugin JavaScript -->
+        <script src="js/jquery.easing.min.js"></script>
 
-                $(".arrowSlide").click(function() {
-                    scrollToAnchor('.wad2015', 'fast');
-                });
+        <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
 
-                $window = $(window);
+        <!-- Custom Theme JavaScript -->
+        <script src="js/grayscale.js"></script>
 
-                $(window).scroll(function() {
-                    $bgobj = $('body');
-
-                    var yPos = -($window.scrollTop() / 3); 
-
-                    // Put together our final background position
-                    var coords = '50% '+ yPos + 'px';
-
-                    console.log(coords);
-
-                    // Move the background
-                    $bgobj.css({ backgroundPosition: coords });
-                }); 
-            });
-        </script>
     </body>
+
 </html>

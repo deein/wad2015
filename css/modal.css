@@ -1,0 +1,230 @@
+/* -------------------------------------------------------------
+  Sass CSS3 Mixins! The Cross-Browser CSS3 Sass Library
+  By: Matthieu Aussaguel, http://www.mynameismatthieu.com, @matthieu_tweets
+
+  List of CSS3 Sass Mixins File to be @imported and @included as you need
+
+  The purpose of this library is to facilitate the use of CSS3 on different browsers avoiding HARD TO READ and NEVER
+  ENDING css files
+
+  note: All CSS3 Properties are being supported by Safari 5
+  more info: http://www.findmebyip.com/litmus/#css3-properties
+
+  Mixins available:
+    -   css3-prefix             - arguments: Property, Value
+    -   background-gradient     - arguments: Start Color: #3C3C3C, End Color: #999999
+    -   background-radial       - arguments: Start Color: #FFFFFF, Start position: 0%, End Color: #000000, End position: 100%
+    -   background-size         - arguments: Width: 100%, Height: 100%
+    -   background-opacity      - arguments: Color: #000, Opacity: .85
+    -   border-radius           - arguments: Radius: 5px
+    -   border-radius-separate  - arguments: Top Left: 5px, Top Left: 5px, Bottom Left: 5px, Bottom Right: 5px
+    -   box                     - arguments: Orientation: horizontal, Pack: center, Align: center
+    -   box-rgba                - arguments: R: 60, G: 3, B: 12, Opacity: 0.23, Color: #3C3C3C
+    -   box-shadow              - arguments: X: 2px, Y: 2px, Blur: 5px, Color: rgba(0,0,0,.4)
+    -   box-sizing              - arguments: Type: border-box
+    -   columns                 - arguments: Count: 3, Gap: 10
+    -   double-borders          - arguments: Color One: #3C3C3C, Color Two: #999999, Radius: 0
+    -   flex                    - arguments: Value: 1
+    -   flip                    - arguments: ScaleX: -1
+    -   font-face               - arguments: Font Family: myFont, Eot File Src: myFont.eot, Woff File Src: myFont.woff, Ttf File Src: myFont.ttf
+    -   opacity                 - arguments: Opacity: 0.5
+    -   outline radius          - arguments: Radius: 5px
+    -   resize                  - arguments: Direction: both
+    -   rotate                  - arguments: Degree: 0, M11: 0, M12: 0, M21: 0, M22: 0
+    CSS Matrix Rotation Calculator http://www.boogdesign.com/examples/transforms/matrix-calculator.html
+    -   text-shadow             - arguments: X: 2px, Y: 2px, Blur: 5px, Color: rgba(0,0,0,.4)
+    -   transform               - arguments: Parameters: null
+    -   transform-style         - arguments: Style: preserve-3d
+    -   transition              - Default arguments: What: all, Length: 1s, Easing: ease-in-out
+    -                            - Examples: @include transition (all 2s ease-in-out);
+    -                                        @include transition (opacity 1s ease-in 2s, width 2s ease-out);
+    -   triple-borders          - arguments: Color One: #3C3C3C, Color Two: #999999, Color Three: #000000, Radius: 0
+    -   keyframes               - arguments: Animation name
+                                - content:   Animation css
+    -   animation               - arguments: name duration timing-function delay iteration-count direction fill-mode play-state
+                                             (http://www.w3schools.com/cssref/css3_pr_animation.asp)
+
+------------------------------------------------------------- */
+/* ADDS A BROWSER PREFIX TO THE PROPERTY */
+/* BACKGROUND GRADIENT */
+/* BACKGROUND RADIAL */
+/* BACKGROUND SIZE */
+/* BACKGROUND COLOR OPACITY */
+/* BORDER RADIUS */
+/* BOX */
+/* BOX RGBA */
+/* BOX SHADOW */
+/* BOX SIZING */
+/* COLUMNS */
+/* DOUBLE BORDERS */
+/* FLEX */
+/* FLIP */
+/* FONT FACE */
+/* OPACITY */
+/* OUTLINE RADIUS */
+/* RESIZE */
+/* ROTATE*/
+/* TEXT SHADOW */
+/* TRANSFORM  */
+/* TRANSFORM STYLE */
+/* TRANSITION */
+/* TRIPLE BORDERS */
+/* KEYFRAMES */
+/* ANIMATION */
+.modal-custom {
+  background: #2a2a28;
+  -webkit-border-radius: 0;
+  -khtml-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  color: white;
+  border: 0;
+}
+.modal-custom .row {
+  margin: 0;
+  padding: 0;
+}
+.modal-custom [class*="col-"] {
+  overflow: hidden;
+  padding: 20px;
+}
+.modal-custom a {
+  line-height: 40px;
+  color: white;
+}
+.modal-custom #motdepasse {
+  display: none;
+}
+.modal-custom form {
+  position: relative;
+  margin: 0 auto;
+  padding: 40px 0;
+  width: 80%;
+  text-align: center;
+  height: 100%;
+}
+.modal-custom form input.form-control {
+  background: white;
+  border: 0;
+  border-bottom: 1px solid rgba(29, 29, 27, 0.3);
+  -webkit-border-radius: 0;
+  -khtml-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+  -khtml-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+  -ms-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+  -o-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+  margin-bottom: 3px;
+  outline: none;
+}
+.modal-custom form input.form-control:focus {
+  background: white;
+  -webkit-box-shadow: 0 0 0 transparent;
+  -khtml-box-shadow: 0 0 0 transparent;
+  -moz-box-shadow: 0 0 0 transparent;
+  -ms-box-shadow: 0 0 0 transparent;
+  -o-box-shadow: 0 0 0 transparent;
+  box-shadow: 0 0 0 transparent;
+  border-bottom: 1px solid #d60057;
+  -webkit-transition: all, 0.8s, ease-in;
+  -khtml-transition: all, 0.8s, ease-in;
+  -moz-transition: all, 0.8s, ease-in;
+  -ms-transition: all, 0.8s, ease-in;
+  -o-transition: all, 0.8s, ease-in;
+  transition: all, 0.8s, ease-in;
+}
+.modal-custom form label.select {
+  width: 100%;
+  font-weight: 100;
+  background: url(../images/arrowSelect.svg) 98% 50% no-repeat white;
+  background-size: 3%;
+  margin-bottom: 3px;
+  height: 34px;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+  -khtml-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+  -ms-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+  -o-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+}
+.modal-custom form select.form-control {
+  background: transparent;
+  height: 34px;
+  border: 0;
+  border-bottom: 1px solid rgba(29, 29, 27, 0.3);
+  -webkit-border-radius: 0;
+  -khtml-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  outline: none;
+  -webkit-appearance: none;
+  -khtml-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+}
+.modal-custom form select.form-control:focus {
+  background: white;
+  -webkit-box-shadow: 0 0 0 transparent;
+  -khtml-box-shadow: 0 0 0 transparent;
+  -moz-box-shadow: 0 0 0 transparent;
+  -ms-box-shadow: 0 0 0 transparent;
+  -o-box-shadow: 0 0 0 transparent;
+  box-shadow: 0 0 0 transparent;
+  border-bottom: 1px solid #d60057;
+  -webkit-transition: all, 0.8s, ease-in;
+  -khtml-transition: all, 0.8s, ease-in;
+  -moz-transition: all, 0.8s, ease-in;
+  -ms-transition: all, 0.8s, ease-in;
+  -o-transition: all, 0.8s, ease-in;
+  transition: all, 0.8s, ease-in;
+}
+.modal-custom form .btn-custom {
+  margin-top: 20px;
+  width: 100%;
+  background: #d60057;
+}
+.modal-custom form .btn-custom:hover {
+  background: #2a2a28;
+}
+.modal-custom .close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 100;
+  color: white;
+}
+.modal-custom .steps {
+  line-height: 60px;
+  font-size: 16px;
+  font-family: "adelle","Helvetica Neue",Helvetica,Arial,sans-serif;
+  overflow: hidden;
+  opacity: 1;
+  color: #d60057;
+  height: 33%;
+  padding: 30px 20px;
+}
+.modal-custom .iconSteps {
+  text-align: center;
+  border: 2px solid #f6f6f6;
+  font-size: 30px;
+  margin-right: 10px;
+  width: 60px;
+  height: 60px;
+}
+
+.bgDarkGreyLight {
+  background: rgba(246, 246, 246, 0.25);
+}
+
+/*# sourceMappingURL=modal.css.map */

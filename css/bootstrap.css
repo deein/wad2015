@@ -990,13 +990,13 @@ hr {
 h1,
 h2,
 h3,
-h4,
+h5,
 h5,
 h6,
 .h1,
 .h2,
 .h3,
-.h4,
+.h5,
 .h5,
 .h6 {
   font-family: inherit;
@@ -1007,25 +1007,25 @@ h6,
 h1 small,
 h2 small,
 h3 small,
-h4 small,
+h5 small,
 h5 small,
 h6 small,
 .h1 small,
 .h2 small,
 .h3 small,
-.h4 small,
+.h5 small,
 .h5 small,
 .h6 small,
 h1 .small,
 h2 .small,
 h3 .small,
-h4 .small,
+h5 .small,
 h5 .small,
 h6 .small,
 .h1 .small,
 .h2 .small,
 .h3 .small,
-.h4 .small,
+.h5 .small,
 .h5 .small,
 .h6 .small {
   font-weight: normal;
@@ -1055,8 +1055,8 @@ h3 .small,
 .h3 .small {
   font-size: 65%;
 }
-h4,
-.h4,
+h5,
+.h5,
 h5,
 .h5,
 h6,
@@ -1064,14 +1064,14 @@ h6,
   margin-top: 10px;
   margin-bottom: 10px;
 }
-h4 small,
-.h4 small,
+h5 small,
+.h5 small,
 h5 small,
 .h5 small,
 h6 small,
 .h6 small,
-h4 .small,
-.h4 .small,
+h5 .small,
+.h5 .small,
 h5 .small,
 .h5 .small,
 h6 .small,
@@ -1090,8 +1090,8 @@ h3,
 .h3 {
   font-size: 24px;
 }
-h4,
-.h4 {
+h5,
+.h5 {
   font-size: 18px;
 }
 h5,
@@ -4690,7 +4690,7 @@ a.thumbnail.active {
   border: 1px solid transparent;
   border-radius: 4px;
 }
-.alert h4 {
+.alert h5 {
   margin-top: 0;
   color: inherit;
 }

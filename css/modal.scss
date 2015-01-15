@@ -1,0 +1,109 @@
+@import "css3-mixins.scss";
+@import "colors.scss";
+
+.modal-custom{
+    background: $mediumgrey;
+    @include border-radius(0);
+    color:white;
+    border:0;
+    .row{
+        margin:0;
+        padding:0;
+    }
+    [class*="col-"]{
+        overflow: hidden;
+        padding:20px;
+        //        height:600px;
+    }
+    a{
+        line-height:40px;
+        color:white;
+    }
+    #motdepasse{display:none;}
+    form{
+        position: relative;
+        margin:0 auto;
+        padding:40px 0;
+        width: 80%;
+        text-align: center;
+        height:100%;
+        input.form-control{
+            background: white;
+            border:0;
+            border-bottom:1px solid rgba($darkgrey, .3);
+            @include border-radius(0);
+            @include box-shadow(0,1px,2px,rgba(black,.6));
+            margin-bottom:3px;
+            outline:none;
+            &:focus{
+                background: white;
+                @include box-shadow(0,0,0,rgba(black,0));
+                border-bottom:1px solid $pink;
+                @include transition(all, .8s, ease-in);
+            }
+        }
+        label.select{
+            width: 100%;
+            font-weight: 100;
+            background:url(../images/arrowSelect.svg) 98% 50% no-repeat white;
+            background-size: 3%;
+            margin-bottom:3px;
+            height:34px;
+            @include box-shadow(0,1px,2px,rgba(black,.6));
+        }
+        select.form-control{
+            background: transparent;
+            height:34px;
+            border:0;
+            border-bottom:1px solid rgba($darkgrey, .3);
+            @include border-radius(0);
+//            @include box-shadow(0,1px,2px,rgba(black,.6));
+//            margin-bottom:3px;
+            outline:none;
+            &:focus{
+                background: white;
+                @include box-shadow(0,0,0,rgba(black,0));
+                border-bottom:1px solid $pink;
+                @include transition(all, .8s, ease-in);
+            }
+            @include css3-prefix('appearance', none);
+        }
+        .btn-custom{
+            margin-top:20px;
+            width:100%;
+            background: $pink;
+            &:hover{
+                background: $mediumgrey;
+            }
+        }
+    }
+    .close{
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        z-index: 100;
+        color: white;
+    }
+    .steps{
+        line-height:60px;
+        font-size: 16px;
+        font-family: "adelle","Helvetica Neue",Helvetica,Arial,sans-serif;
+        overflow: hidden;
+        opacity:1;
+        color:$pink;
+        height:33%;
+        padding:30px 20px;
+    }
+    .iconSteps{
+        text-align: center;
+        border:2px solid $lightgrey;
+        font-size: 30px;
+        margin-right:10px;
+        width:60px;
+        height: 60px;
+    }
+}
+
+.bgDarkGreyLight{
+    background: rgba($lightgrey, .25);
+}
